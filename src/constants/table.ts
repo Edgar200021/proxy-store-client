@@ -1,1 +1,1 @@
-export const TABLE_HEADER = ['IP', 'Country', 'State', 'City', 'ZIP', 'Actions']
+export const TABLE_HEADER = ['Country', 'State', 'City', 'ZIP', 'Actions']

@@ -39,22 +39,22 @@ export const ProxyTable = ({ className }: Props) => {
   //    )
 
   return (
-    <div className={cn('relative  overflow-hidden', className)}>
-      <div className="mini-tablet:overflow-x-scroll min-w-[600px]  mini-tablet:whitespace-nowrap mini-tablet:min-w-[100px] w-full ">
+    <div className={cn('relative overflow-hidden', className)}>
+      <div className="mini-tablet:overflow-x-scroll min-w-[600px] mini-tablet:whitespace-nowrap mini-tablet:min-w-[100px] w-full  ">
         <table
-          className={cn('mb-28 min-w-full break-words table-fixed   ', {
+          className={cn('mb-28 min-w-full break-words table-fixed ', {
             'opacity-50': isFetching,
           })}
         >
-          <thead className="w-full py-[14px]  rounded-primary px-2 font-medium text-sm mini-tablet:text-xs text-gray-200 block bg-primary mb-[14px]">
-            <tr className="grid grid-cols-7  mini-tablet:grid-cols-[repeat(7,200px)] md-phone:grid-cols-[repeat(7,80px)] md-phone:gap-x-8">
+          <thead className="w-full py-[14px] rounded-primary px-0 md-phone:px-2 font-medium text-sm mini-tablet:text-xs text-gray-200 block bg-primary mb-[14px]">
+            <tr className="grid grid-cols-5 mini-tablet:grid-cols-[repeat(5,100px)] md-phone:grid-cols-[repeat(5,50px)] md-phone:gap-x-6 ">
               {TABLE_HEADER.map(val => (
                 <th
-                  className={cn({
-                    'col-span-2': val.toLowerCase() === 'email',
-                    'flex justify-center gap-x-2 ':
-                      val.toLowerCase() === 'токены',
-                  })}
+                  //  className={cn({
+                  //    'col-span-2': val.toLowerCase() === 'email',
+                  //    'flex justify-center gap-x-2 ':
+                  //      val.toLowerCase() === 'токены',
+                  //  })}
                   key={val}
                 >
                   {val}
@@ -67,12 +67,12 @@ export const ProxyTable = ({ className }: Props) => {
               return (
                 <tr
                   key={index}
-                  className="grid grid-cols-7  gap-x-4  text-center py-[17px] border-b-[1px] border-primary mini-tablet:gap-x-0 mini-tablet:grid-cols-[repeat(7,200px)] md-phone:grid-cols-[repeat(7,80px)] md-phone:gap-x-8"
+                  className="grid grid-cols-5 text-center py-[17px] border-b-[1px] border-primary mini-tablet:gap-x-0 mini-tablet:grid-cols-[repeat(5,100px)] md-phone:grid-cols-[repeat(5,50px)] md-phone:gap-x-6"
                 >
-                  <td>127.0.0.1</td>
-                  <td>Country</td>
-                  <td>State</td>
-                  <td>City</td>
+                  {/*<td>127.0.0.1</td>*/}
+                  <td className="text-wrap">Country</td>
+                  <td className="text-wrap">State</td>
+                  <td className="">Armenia</td>
                   <td>Zip</td>
                   <td>
                     <div className="flex gap-x-1 justify-center items-center ">

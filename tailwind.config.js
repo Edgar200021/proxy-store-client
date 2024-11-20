@@ -42,7 +42,7 @@ export default {
           max: '400px',
         },
         'md-phone': {
-          max: '500px',
+          max: '600px',
         },
       },
     },
