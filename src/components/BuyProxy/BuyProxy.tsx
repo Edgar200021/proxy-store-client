@@ -3,6 +3,7 @@ import { BuyProxyButton } from './BuyProxyButton'
 
 interface Props {
   className?: string
+  closeFn?: () => void
 }
 
 export const BuyProxy = ({ className }: Props) => {

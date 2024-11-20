@@ -1,6 +1,6 @@
+import { Spinner } from '@/components/ui/Spinner'
 import { cn } from '@/lib/utils'
 import { useGetIpInfoMutation } from '@/store/ipScore/ipScoreApi'
-import { Spinner } from '@/ui/Spinner'
 import { useEffect } from 'react'
 import { toast } from 'react-toastify'
 
@@ -74,7 +74,7 @@ export const ProxyInfo = ({ className, ip, closeFn }: Props) => {
           <span className="text-lg mb-2">Blacklists</span>
           <ul className="pl-2">
             {Object.entries(data.blacklists).map(([key, value], i) => (
-              <li key={i}> 
+              <li key={i}>
                 <dl className="flex flex-wrap">
                   <dt className="w-1/2">{key}</dt>
                   <dd className="w-1/2 ml-auto pl-1">{value}</dd>

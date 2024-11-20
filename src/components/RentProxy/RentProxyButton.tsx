@@ -7,7 +7,7 @@ import {
 } from '@/components/ui/select'
 import { cn } from '@/lib/utils'
 import { useState } from 'react'
-import { Button } from '../../ui/Button'
+import { Button } from '../ui/Button'
 
 interface Props {
   className?: string

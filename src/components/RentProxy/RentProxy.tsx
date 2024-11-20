@@ -3,6 +3,7 @@ import { RentProxyButton } from './RentProxyButton'
 
 interface Props {
   className?: string
+  closeFn?: () => void
 }
 
 export const RentProxy = ({ className }: Props) => {
